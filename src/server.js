@@ -36,11 +36,11 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var PrismaClient = require("@prisma/client").PrismaClient;
+var client_1 = require("@prisma/client");
 var fastify_1 = require("fastify");
 var zod_1 = require("zod");
 var app = (0, fastify_1.default)();
-var prisma = new PrismaClient();
+var prisma = new client_1.PrismaClient();
 app.get("/users", function () { return __awaiter(void 0, void 0, void 0, function () {
     var user;
     return __generator(this, function (_a) {
